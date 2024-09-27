@@ -4,30 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OWAS TOP Estafas</title>
+    <title>OWASP Top Ten - Static Version</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
             margin: 0;
-            padding: 0;
-            background-color: #f8f9fa;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
         }
         header {
-            background-color: #343a40;
-            color: white;
-            padding: 20px;
+            background: #000;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
         }
-        section {
+        h1 {
+            font-size: 2em;
+        }
+        h2, h3 {
+            color: #0073e6;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        .content {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        a {
+            color: #0073e6;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .images-container {
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            justify-content: center;
             gap: 20px;
-            padding: 20px;
+            margin-top: 20px;
         }
-        img {
-            width: 300px; /* Puedes ajustar el ancho según necesites */
-            max-width: 90%;
+        .images-container img {
+            width: 150px;
+            max-width: 100%;
             border: 1px solid #ddd;
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -36,14 +64,36 @@
 </head>
 <body>
     <header>
-        <h1>OWAS Top Estafas</h1>
-        <h2>Cuando vean que se pueden ganar un Iphone, duden!</h2>
+        <h1>OWASP Top Ten</h1>
     </header>
-    <section>
-        <img src="images/img1.jpg" alt="Imagen 1">
-        <img src="images/img2.jpg" alt="Imagen 2">
-        <img src="images/img3.jpg" alt="Imagen 3">
-        <img src="images/img4.jpg" alt="Imagen 4">
-    </section>
+    <div class="content">
+        <h2>About OWASP Top Ten</h2>
+        <p>The OWASP Top Ten is the reference standard for web application security. The project aims to raise awareness about application security by identifying some of the most critical risks faced by organizations.</p>
+
+        <h3>Top Ten List</h3>
+        <ul>
+            <li><strong>A01:2021 - Broken Access Control</strong>: Failures in access control often lead to unauthorized access.</li>
+            <li><strong>A02:2021 - Cryptographic Failures</strong>: Related to protecting data, often failures are due to weak or missing cryptographic controls.</li>
+            <li><strong>A03:2021 - Injection</strong>: Flaws such as SQL, NoSQL, OS, and LDAP injection occur when untrusted data is sent to an interpreter.</li>
+            <li><strong>A04:2021 - Insecure Design</strong>: Involves flaws in design and architecture.</li>
+            <li><strong>A05:2021 - Security Misconfiguration</strong>: Most common issue; occurs when security settings are insecure or not properly implemented.</li>
+            <li><strong>A07:2021 - Identification and Authentication Failures</strong>: Weak authentication mechanisms can allow unauthorized access.</li>
+            <li><strong>A08:2021 - Software and Data Integrity Failures</strong>: Relates to code and infrastructure that does not protect against integrity violations.</li>
+            <li><strong>A09:2021 - Security Logging and Monitoring Failures</strong>: Lack of logs and monitoring can lead to undetected breaches.</li>
+            <li><strong>A10:2021 - Server-Side Request Forgery</strong>: Occurs when a web application is fetching a remote resource without validating the user-supplied URL.</li>
+            <li><strong>B01:2024 - Venta de bonos contribución</strong>: La venta de bonos se caracteriza porque el vendedor vende bonos de dudosa procedencia. Siempre ofrecen un iPhone como premio o un viaje a Carlos Paz.</li>
+        </ul>
+
+
+        <div class="images-container">
+            <img src="images/img1.jpg" alt="Imagen 1">
+            <img src="images/img2.jpg" alt="Imagen 2">
+            <img src="images/img3.jpg" alt="Imagen 3">
+            <img src="images/img4.jpg" alt="Imagen 4">
+        </div>
+        <p>For more details and guidance on each risk, visit the official <a href="https://owasp.org/www-project-top-ten/">OWASP Top Ten project page</a>.</p>
+
+
+      </div>
 </body>
 </html>
